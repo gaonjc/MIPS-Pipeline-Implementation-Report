@@ -661,9 +661,9 @@ module I_EXECUTE (
 endmodule
 ```
 
-### Timing Diagram
+### EX Stage Timing Diagram
 
-![Placeholder for EX Stage Timing Diagram]
+![EX Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/EX_STAGE_WAVEFORM.gif)
 
 ### Analysis of ALU Operations for Register r1
 
