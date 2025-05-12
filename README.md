@@ -166,7 +166,7 @@ module I_FETCH (
 endmodule
 ```
 
-### Timing Diagram
+### IF Stage Timing Diagram
 
 ![IF Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/IF_STAGE_WAVEFORM.gif)
 
@@ -406,7 +406,7 @@ module I_DECODE (
 endmodule
 ```
 
-### Timing Diagram
+### ID Stage Timing Diagram
 
 ![ID Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/ID_STAGE_WAVEFORM.gif)
 
