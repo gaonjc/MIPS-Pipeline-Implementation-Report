@@ -856,9 +856,9 @@ module MEMORY (
 endmodule
 ```
 
-### Timing Diagram
+### MEM Stage Timing Diagram
 
-![Placeholder for MEM Stage Timing Diagram]
+![MEM Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/MEM_STAGE_WAVEFORM.gif)
 
 ### Analysis of Memory Operations for Register r1
 
