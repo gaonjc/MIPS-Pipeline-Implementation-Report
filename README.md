@@ -938,9 +938,9 @@ module WB (
 endmodule
 ```
 
-### Timing Diagram
+### WB Stage Timing Diagram
 
-![Placeholder for WB Stage Timing Diagram]
+![WB Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/WB_STAGE_WAVEFORM.gif)
 
 ### Analysis of Register r1 Updates in Writeback Stage
 
