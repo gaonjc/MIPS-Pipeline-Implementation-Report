@@ -1290,12 +1290,12 @@ endmodule
 
 - **Hardware Floating Point Accelerator**: The current implementation handles only integer operations, which limits its computational capabilities for scientific computing, graphics processing, and other floating-point intensive applications. Adding a dedicated floating-point unit (FPU) would significantly enhance the processor's performance for these workloads.
 Possible Improvements:
-- Dedicated Floating-Point Register File: Implement a separate set of registers (e.g., $f0-$f31) specifically for floating-point operations.
-- Floating-Point Execution Units: Implement specialized hardware units for floating-point arithmetic operations.
-- Pipeline Integration: Extend the pipeline to handle floating-point instructions.
-- Instruction Set Extension: Extend the MIPS instruction set to include floating-point operations.
-- Control Unit Extension: Enhance the control unit to decode and handle floating-point instructions.
-- Integration with Main Pipeline: Connect the FPU to the main pipeline with appropriate handshaking and scheduling mechanisms.
+  - Dedicated Floating-Point Register File: Implement a separate set of registers (e.g., $f0-$f31) specifically for floating-point operations.
+  - Floating-Point Execution Units: Implement specialized hardware units for floating-point arithmetic operations.
+  - Pipeline Integration: Extend the pipeline to handle floating-point instructions.
+  - Instruction Set Extension: Extend the MIPS instruction set to include floating-point operations.
+  - Control Unit Extension: Enhance the control unit to decode and handle floating-point instructions.
+  - Integration with Main Pipeline: Connect the FPU to the main pipeline with appropriate handshaking and scheduling mechanisms.
 
 ### Pipeline Diagram with Improvements
 
@@ -1311,21 +1311,26 @@ ID Stage:
   - Add hazard detection unit
   - Add early branch resolution logic
   - Add register renaming logic
+  - Add floating-point register file
 
 EX Stage:
   - Add forwarding unit inputs
   - Add reservation station for out-of-order execution
   - Add multiple execution units (ALUs, branch units, etc.)
+  - Add floating-point execution units (FADD, FMUL, FDIV, etc.)
 
 MEM Stage:
   - Add data cache
   - Add write buffer
   - Add memory ordering logic
+  - Add floating-point result handling
 
 WB Stage:
   - Add reorder buffer for in-order completion
   - Add commit logic for speculative execution
   - Support for multiple simultaneous writeback operations
+  - Add floating-point register writeback paths
+
 ```
 
 By implementing these improvements, the MIPS pipeline would achieve significantly better performance by reducing the impact of hazards, enabling more efficient memory access, and allowing for more optimized instruction execution. Each of these modifications would require careful design to maintain correctness while improving performance.
