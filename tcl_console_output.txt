@@ -1,0 +1,560 @@
+>>> INST_MEM after $readmemb:
+  MEM[0] = 10001100000000010000000000000001
+  MEM[1] = 10001100000000100000000000000010
+  MEM[2] = 10001100000000110000000000000011
+  MEM[3] = 10000000000000000000000000000000
+  MEM[4] = 10000000000000000000000000000000
+  MEM[5] = 00000000001000100000100000100000
+  MEM[6] = 10000000000000000000000000000000
+  MEM[7] = 10000000000000000000000000000000
+  MEM[8] = 10000000000000000000000000000000
+  MEM[9] = 00000000001000110000100000100000
+  MEM[10] = 10000000000000000000000000000000
+  MEM[11] = 10000000000000000000000000000000
+  MEM[12] = 10000000000000000000000000000000
+  MEM[13] = 00000000001000010000100000100000
+  MEM[14] = 10000000000000000000000000000000
+  MEM[15] = 10000000000000000000000000000000
+  MEM[16] = 10000000000000000000000000000000
+  MEM[17] = 10000000000000000000000000000000
+  MEM[18] = 00000000001000000000100000100000
+  MEM[19] = 10000000000000000000000000000000
+  MEM[20] = 10000000000000000000000000000000
+  MEM[21] = 10000000000000000000000000000000
+  MEM[22] = 10000000000000000000000000000000
+  MEM[23] = 10000000000000000000000000000000
+IF Stage: PC initialized to 0
+Register file initialized with all zeros
+Data Memory Initialized:
+MEM[0] = 00000000 (0)
+MEM[1] = 00000001 (1)
+MEM[2] = 00000002 (2)
+MEM[3] = 00000003 (3)
+MEM[4] = 00000004 (4)
+MEM[5] = 00000005 (5)
+Data Memory Contents (after potentially loading from file):
+MEM[0] = 00000000 (0)
+MEM[1] = 00000001 (1)
+MEM[2] = 00000002 (2)
+MEM[3] = 00000003 (3)
+MEM[4] = 00000004 (4)
+MEM[5] = 00000005 (5)
+INST_MEM read: addr=00000000 -> word[0] = 10001100000000010000000000000001
+IF Stage: PC reset to 0
+IF Stage: IF/ID registers reset
+WB Stage: RegWrite=0, MemtoReg=0
+IF Stage: PC reset to 0
+IF Stage: IF/ID registers reset
+Register file reset to all zeros
+IF Stage: PC reset to 0
+IF Stage: IF/ID registers reset
+Register file reset to all zeros
+
+===================== Clock Cycle 1 =====================
+IF Stage - PC: 00000000, Instruction: 10001100000000010000000000000001
+IF/ID - NPC:          0, IR: 00000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 0
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          0
+r2:          0
+r3:          0
+IF Stage: PC updated from 00000000 to 00000004
+IF Stage: IF/ID_IR updated to 10001100000000010000000000000001, IF_ID_NPC to 00000004
+INST_MEM read: addr=00000004 -> word[1] = 10001100000000100000000000000010
+
+===================== Clock Cycle 2 =====================
+IF Stage - PC: 00000004, Instruction: 10001100000000100000000000000010
+IF/ID - NPC:          4, IR: 8c010001
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 10, MCTRL: 000, EXCTRL: 1100
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          0
+r2:          0
+r3:          0
+IF Stage: PC updated from 00000004 to 00000008
+IF Stage: IF/ID_IR updated to 10001100000000100000000000000010, IF_ID_NPC to 00000008
+INST_MEM read: addr=00000008 -> word[2] = 10001100000000110000000000000011
+
+===================== Clock Cycle 3 =====================
+IF Stage - PC: 00000008, Instruction: 10001100000000110000000000000011
+IF/ID - NPC:          8, IR: 8c020002
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000001, RT:  1, RD:  0
+ID/EX Control - WBCTRL: 11, MCTRL: 010, EXCTRL: 0001
+EX/MEM - ALU_RESULT:          x, B:          0, WRITEREG:  0, ZERO: x
+EX/MEM Control - WBCTRL: 10, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          0
+r2:          0
+r3:          0
+IF Stage: PC updated from 00000008 to 0000000c
+IF Stage: IF/ID_IR updated to 10001100000000110000000000000011, IF_ID_NPC to 0000000c
+INST_MEM read: addr=0000000c -> word[3] = 10000000000000000000000000000000
+D_MEM: READ Address=00000004 (word_addr=1) => Data=00000001 (1)
+WB Stage: RegWrite=1, MemtoReg=0
+WB Stage: Writing data x (source:    ALU)
+
+===================== Clock Cycle 4 =====================
+IF Stage - PC: 0000000c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         12, IR: 8c030003
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000002, RT:  2, RD:  0
+ID/EX Control - WBCTRL: 11, MCTRL: 010, EXCTRL: 0001
+EX/MEM - ALU_RESULT:          4, B:          0, WRITEREG:  1, ZERO: 0
+EX/MEM Control - WBCTRL: 11, MCTRL: 010
+MEM/WB - READ_DATA:          0, ALU_RESULT:          x, WRITEREG:  0
+MEM/WB Control - WBCTRL: 10
+WB - WRITEDATA:          x, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          0
+r2:          0
+r3:          0
+IF Stage: PC updated from 0000000c to 00000010
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000010
+INST_MEM read: addr=00000010 -> word[4] = 10000000000000000000000000000000
+D_MEM: READ Address=00000008 (word_addr=2) => Data=00000002 (2)
+WB Stage: RegWrite=1, MemtoReg=1
+WB Stage: Writing data 1 (source: Memory)
+
+===================== Clock Cycle 5 =====================
+IF Stage - PC: 00000010, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         16, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000003, RT:  3, RD:  0
+ID/EX Control - WBCTRL: 11, MCTRL: 010, EXCTRL: 0001
+EX/MEM - ALU_RESULT:          8, B:          0, WRITEREG:  2, ZERO: 0
+EX/MEM Control - WBCTRL: 11, MCTRL: 010
+MEM/WB - READ_DATA:          1, ALU_RESULT:          4, WRITEREG:  1
+MEM/WB Control - WBCTRL: 11
+WB - WRITEDATA:          1, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          0
+r2:          0
+r3:          0
+IF Stage: PC updated from 00000010 to 00000014
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000014
+Writing value 1 to register r1
+INST_MEM read: addr=00000014 -> word[5] = 00000000001000100000100000100000
+D_MEM: READ Address=0000000c (word_addr=3) => Data=00000003 (3)
+WB Stage: Writing data 2 (source: Memory)
+
+===================== Clock Cycle 6 =====================
+IF Stage - PC: 00000014, Instruction: 00000000001000100000100000100000
+IF/ID - NPC:         20, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:         12, B:          0, WRITEREG:  3, ZERO: 0
+EX/MEM Control - WBCTRL: 11, MCTRL: 010
+MEM/WB - READ_DATA:          2, ALU_RESULT:          8, WRITEREG:  2
+MEM/WB Control - WBCTRL: 11
+WB - WRITEDATA:          2, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          1
+r2:          0
+r3:          0
+IF Stage: PC updated from 00000014 to 00000018
+IF Stage: IF/ID_IR updated to 00000000001000100000100000100000, IF_ID_NPC to 00000018
+Writing value 2 to register r2
+INST_MEM read: addr=00000018 -> word[6] = 10000000000000000000000000000000
+WB Stage: Writing data 3 (source: Memory)
+
+===================== Clock Cycle 7 =====================
+IF Stage - PC: 00000018, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         24, IR: 00220820
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          3, ALU_RESULT:         12, WRITEREG:  3
+MEM/WB Control - WBCTRL: 11
+WB - WRITEDATA:          3, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          1
+r2:          2
+r3:          0
+IF Stage: PC updated from 00000018 to 0000001c
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 0000001c
+Writing value 3 to register r3
+INST_MEM read: addr=0000001c -> word[7] = 10000000000000000000000000000000
+WB Stage: RegWrite=0, MemtoReg=0
+
+===================== Clock Cycle 8 =====================
+IF Stage - PC: 0000001c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         28, IR: 80000000
+ID/EX - A(rs):          1, B(rt):          2, IMM: 00000820, RT:  2, RD:  1
+ID/EX Control - WBCTRL: 10, MCTRL: 000, EXCTRL: 1100
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          1
+r2:          2
+r3:          3
+IF Stage: PC updated from 0000001c to 00000020
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000020
+INST_MEM read: addr=00000020 -> word[8] = 10000000000000000000000000000000
+
+===================== Clock Cycle 9 =====================
+IF Stage - PC: 00000020, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         32, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          3, B:          2, WRITEREG:  1, ZERO: 0
+EX/MEM Control - WBCTRL: 10, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          1
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000020 to 00000024
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000024
+INST_MEM read: addr=00000024 -> word[9] = 00000000001000110000100000100000
+WB Stage: RegWrite=1, MemtoReg=0
+WB Stage: Writing data 3 (source:    ALU)
+
+===================== Clock Cycle 10 =====================
+IF Stage - PC: 00000024, Instruction: 00000000001000110000100000100000
+IF/ID - NPC:         36, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          3, WRITEREG:  1
+MEM/WB Control - WBCTRL: 10
+WB - WRITEDATA:          3, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          1
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000024 to 00000028
+IF Stage: IF/ID_IR updated to 00000000001000110000100000100000, IF_ID_NPC to 00000028
+Writing value 3 to register r1
+INST_MEM read: addr=00000028 -> word[10] = 10000000000000000000000000000000
+WB Stage: RegWrite=0, MemtoReg=0
+
+===================== Clock Cycle 11 =====================
+IF Stage - PC: 00000028, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         40, IR: 00230820
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          3
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000028 to 0000002c
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 0000002c
+INST_MEM read: addr=0000002c -> word[11] = 10000000000000000000000000000000
+
+===================== Clock Cycle 12 =====================
+IF Stage - PC: 0000002c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         44, IR: 80000000
+ID/EX - A(rs):          3, B(rt):          3, IMM: 00000820, RT:  3, RD:  1
+ID/EX Control - WBCTRL: 10, MCTRL: 000, EXCTRL: 1100
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          3
+r2:          2
+r3:          3
+IF Stage: PC updated from 0000002c to 00000030
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000030
+INST_MEM read: addr=00000030 -> word[12] = 10000000000000000000000000000000
+
+===================== Clock Cycle 13 =====================
+IF Stage - PC: 00000030, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         48, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          6, B:          3, WRITEREG:  1, ZERO: 0
+EX/MEM Control - WBCTRL: 10, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          3
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000030 to 00000034
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000034
+INST_MEM read: addr=00000034 -> word[13] = 00000000001000010000100000100000
+WB Stage: RegWrite=1, MemtoReg=0
+WB Stage: Writing data 6 (source:    ALU)
+
+===================== Clock Cycle 14 =====================
+IF Stage - PC: 00000034, Instruction: 00000000001000010000100000100000
+IF/ID - NPC:         52, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          6, WRITEREG:  1
+MEM/WB Control - WBCTRL: 10
+WB - WRITEDATA:          6, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          3
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000034 to 00000038
+IF Stage: IF/ID_IR updated to 00000000001000010000100000100000, IF_ID_NPC to 00000038
+Writing value 6 to register r1
+INST_MEM read: addr=00000038 -> word[14] = 10000000000000000000000000000000
+WB Stage: RegWrite=0, MemtoReg=0
+
+===================== Clock Cycle 15 =====================
+IF Stage - PC: 00000038, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         56, IR: 00210820
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          6
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000038 to 0000003c
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 0000003c
+INST_MEM read: addr=0000003c -> word[15] = 10000000000000000000000000000000
+
+===================== Clock Cycle 16 =====================
+IF Stage - PC: 0000003c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         60, IR: 80000000
+ID/EX - A(rs):          6, B(rt):          6, IMM: 00000820, RT:  1, RD:  1
+ID/EX Control - WBCTRL: 10, MCTRL: 000, EXCTRL: 1100
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          6
+r2:          2
+r3:          3
+IF Stage: PC updated from 0000003c to 00000040
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000040
+INST_MEM read: addr=00000040 -> word[16] = 10000000000000000000000000000000
+
+===================== Clock Cycle 17 =====================
+IF Stage - PC: 00000040, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         64, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:         12, B:          6, WRITEREG:  1, ZERO: 0
+EX/MEM Control - WBCTRL: 10, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:          6
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000040 to 00000044
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000044
+INST_MEM read: addr=00000044 -> word[17] = 10000000000000000000000000000000
+WB Stage: RegWrite=1, MemtoReg=0
+WB Stage: Writing data 12 (source:    ALU)
+
+===================== Clock Cycle 18 =====================
+IF Stage - PC: 00000044, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         68, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:         12, WRITEREG:  1
+MEM/WB Control - WBCTRL: 10
+WB - WRITEDATA:         12, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:          6
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000044 to 00000048
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000048
+Writing value 12 to register r1
+INST_MEM read: addr=00000048 -> word[18] = 00000000001000000000100000100000
+WB Stage: RegWrite=0, MemtoReg=0
+
+===================== Clock Cycle 19 =====================
+IF Stage - PC: 00000048, Instruction: 00000000001000000000100000100000
+IF/ID - NPC:         72, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000048 to 0000004c
+IF Stage: IF/ID_IR updated to 00000000001000000000100000100000, IF_ID_NPC to 0000004c
+INST_MEM read: addr=0000004c -> word[19] = 10000000000000000000000000000000
+
+===================== Clock Cycle 20 =====================
+IF Stage - PC: 0000004c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         76, IR: 00200820
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 0000004c to 00000050
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000050
+INST_MEM read: addr=00000050 -> word[20] = 10000000000000000000000000000000
+
+===================== Clock Cycle 21 =====================
+IF Stage - PC: 00000050, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         80, IR: 80000000
+ID/EX - A(rs):         12, B(rt):          0, IMM: 00000820, RT:  0, RD:  1
+ID/EX Control - WBCTRL: 10, MCTRL: 000, EXCTRL: 1100
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000050 to 00000054
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000054
+INST_MEM read: addr=00000054 -> word[21] = 10000000000000000000000000000000
+
+===================== Clock Cycle 22 =====================
+IF Stage - PC: 00000054, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         84, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:         12, B:          0, WRITEREG:  1, ZERO: 0
+EX/MEM Control - WBCTRL: 10, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000054 to 00000058
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000058
+INST_MEM read: addr=00000058 -> word[22] = 10000000000000000000000000000000
+WB Stage: RegWrite=1, MemtoReg=0
+WB Stage: Writing data 12 (source:    ALU)
+
+===================== Clock Cycle 23 =====================
+IF Stage - PC: 00000058, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         88, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:         12, WRITEREG:  1
+MEM/WB Control - WBCTRL: 10
+WB - WRITEDATA:         12, REGWRITE: 1
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 00000058 to 0000005c
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 0000005c
+Writing value 12 to register r1
+INST_MEM read: addr=0000005c -> word[23] = 10000000000000000000000000000000
+WB Stage: RegWrite=0, MemtoReg=0
+
+===================== Clock Cycle 24 =====================
+IF Stage - PC: 0000005c, Instruction: 10000000000000000000000000000000
+IF/ID - NPC:         92, IR: 80000000
+ID/EX - A(rs):          0, B(rt):          0, IMM: 00000000, RT:  0, RD:  0
+ID/EX Control - WBCTRL: 00, MCTRL: 000, EXCTRL: 0000
+EX/MEM - ALU_RESULT:          0, B:          0, WRITEREG:  0, ZERO: 1
+EX/MEM Control - WBCTRL: 00, MCTRL: 000
+MEM/WB - READ_DATA:          0, ALU_RESULT:          0, WRITEREG:  0
+MEM/WB Control - WBCTRL: 00
+WB - WRITEDATA:          0, REGWRITE: 0
+
+Register Contents:
+r0:          0
+r1:         12
+r2:          2
+r3:          3
+IF Stage: PC updated from 0000005c to 00000060
+IF Stage: IF/ID_IR updated to 10000000000000000000000000000000, IF_ID_NPC to 00000060
+INST_MEM read: addr=00000060 -> word[24] = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
