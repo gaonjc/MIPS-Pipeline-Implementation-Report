@@ -1,7 +1,7 @@
 # MIPS-Pipeline-Implementation-Report
 Computer Architecture MIPS Pipeline
 # MIPS Pipeline Implementation Report
-![MIPS DATAPATH]()
+![MIPS DATAPATH](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/mipsdatapath.png)
 This report provides a comprehensive overview of a 5-stage MIPS pipeline implementation in Verilog. Each stage (Fetch, Decode, Execute, Memory, and Writeback) is thoroughly analyzed with focus on its purpose, components, connections, and behavior. The report also examines how register values, particularly r1, change throughout program execution.
 
 ## Table of Contents
