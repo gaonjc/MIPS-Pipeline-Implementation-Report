@@ -1288,15 +1288,14 @@ endmodule
   - Main memory
   - Virtual memory system
 
-4. Hardware Floating Point Accelerator
-The current implementation handles only integer operations, which limits its computational capabilities for scientific computing, graphics processing, and other floating-point intensive applications. Adding a dedicated floating-point unit (FPU) would significantly enhance the processor's performance for these workloads.
+- **Hardware Floating Point Accelerator**: The current implementation handles only integer operations, which limits its computational capabilities for scientific computing, graphics processing, and other floating-point intensive applications. Adding a dedicated floating-point unit (FPU) would significantly enhance the processor's performance for these workloads.
 Possible Improvements:
--Dedicated Floating-Point Register File: Implement a separate set of registers (e.g., $f0-$f31) specifically for floating-point operations.
--Floating-Point Execution Units: Implement specialized hardware units for floating-point arithmetic operations.
--Pipeline Integration: Extend the pipeline to handle floating-point instructions.
--Instruction Set Extension: Extend the MIPS instruction set to include floating-point operations.
--Control Unit Extension: Enhance the control unit to decode and handle floating-point instructions.
--Integration with Main Pipeline: Connect the FPU to the main pipeline with appropriate handshaking and scheduling mechanisms.
+- Dedicated Floating-Point Register File: Implement a separate set of registers (e.g., $f0-$f31) specifically for floating-point operations.
+- Floating-Point Execution Units: Implement specialized hardware units for floating-point arithmetic operations.
+- Pipeline Integration: Extend the pipeline to handle floating-point instructions.
+- Instruction Set Extension: Extend the MIPS instruction set to include floating-point operations.
+- Control Unit Extension: Enhance the control unit to decode and handle floating-point instructions.
+- Integration with Main Pipeline: Connect the FPU to the main pipeline with appropriate handshaking and scheduling mechanisms.
 
 ### Pipeline Diagram with Improvements
 
