@@ -168,7 +168,7 @@ endmodule
 
 ### Timing Diagram
 
-![Placeholder for IF Stage Timing Diagram]
+![IF Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/IF_STAGE_WAVEFORM.gif)
 
 The timing diagram shows the instruction fetch process over multiple clock cycles. At each positive clock edge, the PC is updated and a new instruction is fetched.
 
