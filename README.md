@@ -408,7 +408,7 @@ endmodule
 
 ### Timing Diagram
 
-![Placeholder for ID Stage Timing Diagram]
+![ID Stage Timing Diagram](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/testbench_waveforms/ID_STAGE_WAVEFORM.gif)
 
 ### Analysis of Register File Behavior
 
