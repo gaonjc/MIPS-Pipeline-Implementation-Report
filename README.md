@@ -12,9 +12,9 @@ This report provides a comprehensive overview of a 5-stage MIPS pipeline impleme
 5. [Writeback Stage](#5-writeback-stage)
 6. [Conclusion](#6-conclusion)
 
-#The Verilog for the top and children modules is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/PIPELINE.v)
-#The Verilog for the testbench is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/tb.v)
-#The tcl console output where you can see the value of r1 is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/tcl_console_output.txt)
+# The Verilog for the top and children modules is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/PIPELINE.v)
+# The Verilog for the testbench is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/tb.v)
+# The tcl console output where you can see the value of r1 is [here](https://github.com/gaonjc/MIPS-Pipeline-Implementation-Report/blob/main/tcl_console_output.txt)
 
 ## 1. Instruction Fetch Stage
 
